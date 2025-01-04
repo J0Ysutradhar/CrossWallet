@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cross Wallet Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #D3EE98, #c1ea83);
+      color: #000000;
+      line-height: 1.6;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #000000c2;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      z-index: 10;
+      border-bottom: 1px solid #243b55;
+    }
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    nav a:hover {
+      background: #1a2e44;
+      border-radius: 5px;
+    }
+
+    /* Header */
+    header, section {
+      padding: 70px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.8em;
+      animation: fadeIn 2s ease-out;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 60px 20px;
+      background: #83c551;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      animation: fadeInUp 1s ease-out;
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+    section p, li {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+    ul {
+      text-align: left;
+      max-width: 700px;
+      margin: auto;
+      padding-left: 20px;
+    }
+
+    /* Button Style */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #189f6b;
+      color: #f5f5f5;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+    }
+    .btn:hover {
+      background: #58dfa2;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+      header p {
+        font-size: 1em;
+      }
+      nav a {
+        padding: 10px;
+        font-size: 0.9em;
+      }
+      section h2 {
+        font-size: 1.6em;
+      }
+      section p, li {
+        font-size: 1em;
+      }
+      ul {
+        padding-left: 10px;
+      }
+      .btn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+      nav {
+        flex-direction: column;
+        padding: 10px;
+      }
+      nav a {
+        margin: 5px 0;
+        font-size: 0.85em;
+      }
+      header h1 {
+        font-size: 2em;
+      }
+      section {
+        padding: 40px 15px;
+      }
+      section h2 {
+        font-size: 1.5em;
+      }
+      .btn {
+        padding: 6px 12px;
+        font-size: 0.85em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation
+  <nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#features">Key Features</a>
+    <a href="#setup">Setup</a>
+    <a href="#security">Security</a>
+    <a href="#faqs">FAQs</a>
+  </nav> -->
+
+  <!-- Header -->
+  <header>
+    <h1>Cross Wallet Documentation</h1>
+    <p>Your complete guide to using Cross Wallet for safe and efficient crypto management.</p>
+  </header>
+
+  <!-- Sections -->
+  <section id="introduction">
+    <h2>Introduction</h2>
+    <p>Cross Wallet is a revolutionary cryptocurrency wallet that offers a seamless and secure experience for managing digital assets. Designed with user convenience in mind, Cross Wallet enables users to hold, sell, and manage multiple cryptocurrency wallets within a single interface. This unique feature allows Cross Wallet users to link popular wallets, such as Metamask, Phantom, and Trust, granting unified access to their assets with ease and safety.</p>
+  </section>
+
+  <section id="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li><strong>Multi-Wallet Integration:</strong> Cross Wallet stands out by allowing users to bind multiple wallets, including Metamask, Phantom, and Trust. This integration streamlines access to various wallets, saving time and improving user convenience without the need to switch between applications.
+
+      </li>
+      <li><strong>Asset Management & Trading:</strong>Users can hold and sell their crypto assets directly within Cross Wallet, creating a comprehensive, all-in-one platform for asset management. The platform supports various coins and tokens, empowering users to manage diverse assets easily.</li>
+      <li><strong>Top-Notch Security:</strong> Security is paramount. Cross Wallet uses industry-standard encryption and rigorous security protocols to ensure users' funds are safe. The wallet is designed to give users confidence in accessing and managing assets across multiple linked wallets while being 100% secure.</li>
+      <li><strong>Cross-Wallet Synchronization:</strong>The Cross Wallet's synchronization feature ensures that each connected wallet is kept up-to-date, providing real-time access to funds and transaction history. This feature eliminates the need to switch manually between wallets, streamlining the process and giving users an efficient crypto management tool.</li>
+    </ul>
+  </section>
+
+  <section id="setup">
+    <h2>How to Set Up Cross Wallet</h2>
+    <ul>
+      <li><strong>Download and Install:</strong>Start by downloading Cross Wallet from the official website or app store. Follow the installation steps on your device to ensure a secure setup.</li>
+      <li><strong>Create an Account:</strong>Open the application, and create a secure account by providing your email and a strong password. Enabling two-factor authentication (2FA) is highly recommended for added security.</li>
+      <li><strong>Link Other Wallets:</strong> Use the "Link Wallet" option to add Metamask, Phantom, or Trust wallets.</li>
+      <li><strong>Manage Assets:</strong>Once linked, you can view, hold, and sell your crypto assets within Cross Wallet. Access the "Portfolio" tab to see an overview of all assets across linked wallets.</li>
+    </ul>
+  </section>
+
+  <section id="security">
+    <h2>Security Protocols</h2>
+    <p>We prioritize your security through:</p>
+    <ul>
+      <li><strong>Encryption:</strong> All data is encrypted to ensure secure transactions.</li>
+      <li><strong>2FA and Biometrics:</strong> Enable two-factor and biometric security options.</li>
+      <li><strong>Wallet Isolation:</strong> Each wallet remains isolated for secure management.</li>
+    </ul>
+  </section>
+
+  <section id="security">
+    <h2>Supported Currencies and Assets</h2>
+    <p>Cross Wallet supports a range of popular cryptocurrencies, including:</p>
+    <ul>
+      <li><strong>Bitcoin (BTC)
+      </strong></li>
+      <li><strong>Ethereum (ETH)
+      </strong></li>
+      <li><strong>Solana (SOL)
+      </strong></li>
+      <li><strong>BNB (Binance Coin)
+
+      </strong></li>
+      <li><strong>And many other ERC-20, BEP-20, and Solana tokens.
+
+      </strong></li>
+    </ul>
+  </section>
+
+  <section id="faqs">
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    <ul>
+      <li><strong>Is Cross Wallet free?</strong> Yes, it is free. Transaction fees may apply for trading.</li>
+      <li><strong>How secure is it?</strong> Cross Wallet employs high-level security protocols, including encryption and 2FA.</li>
+      <li><strong>Can I link multiple wallets?</strong> Yes, link as many Metamask, Phantom, or Trust wallets as you like.</li>
+      <li><strong>What should I do if I forget my password?</strong>Use the "Forgot Password" option on the login page. Follow the instructions to reset your password securely.</li>
+    </ul>
+    <a href="#introduction" class="btn">Back to Top</a>
+  </section>
+
+</body>
+</html>

