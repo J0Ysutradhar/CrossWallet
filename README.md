@@ -4,7 +4,7 @@
 Cross Wallet is a modern, cross-platform cryptocurrency wallet designed to streamline the management of multiple wallets in one interface. With robust security, free gas fees, and compatibility with popular wallets like Metamask, Phantom, and Trust, Cross Wallet provides a user-friendly experience for both novice and advanced users.
 
 ---
-
+1
 ## Features
 
 ### Key Functionalities
